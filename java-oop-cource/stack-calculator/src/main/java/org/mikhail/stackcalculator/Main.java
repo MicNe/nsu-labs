@@ -25,6 +25,8 @@ public class Main {
         } else if (args.length == 1) {
             inputFileName = args[0];
         } else {
+            LOGGER.error("Run without arguments to use STDIN as input stream");
+            LOGGER.error("Specify an argument to use file as input stream");
             return;
         }
 
